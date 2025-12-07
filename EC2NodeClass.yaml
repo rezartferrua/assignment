@@ -4,9 +4,9 @@ metadata:
   name: default
 spec:
   amiFamily: AL2023
-  amiSelectorTerms:
-  - id: ami-0a6793a25df710b06  # AMD64 AMI
-  - id: ami-0ff3ffae254f9ede6  # ARM64 AMI
+ # amiSelectorTerms:
+ # - id: ami-0a6793a25df710b06  # AMD64 AMI
+ # - id: ami-0ff3ffae254f9ede6  # ARM64 AMI
   securityGroupSelectorTerms:
 
   - tags:
@@ -18,6 +18,7 @@ spec:
 
 
   instanceProfile: KarpenterNodeInstanceProfile-eks-karpenter-demo 
+
 
 
 
