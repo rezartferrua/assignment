@@ -9,16 +9,15 @@ spec:
   - id: ami-0ff3ffae254f9ede6  # ARM64 AMI
   securityGroupSelectorTerms:
   - tags:
-      Name: eks-karpenter-demo
-  - tags:
-      Name: eks-karpenter-demo-vpc
+      karpenter.sh/discovery: eks-karpenter-demo
+
   subnetSelectorTerms:
   - tags:
-      Name: eks-karpenter-demo
-  - tags
-      Name: eks-karpenter-demo-vpc
+      karpenter.sh/discovery: eks-karpenter-demo
+
 
   instanceProfile: eks-karpenter-demo-karpenter-node-role 
+
 
 
 
