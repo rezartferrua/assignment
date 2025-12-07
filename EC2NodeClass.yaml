@@ -10,6 +10,8 @@ spec:
   securityGroupSelectorTerms:
   - tags:
       karpenter.sh/discovery: eks-karpenter-demo
+  - tags:
+      aws:eks:cluster-name: eks-karpenter-demo
 
   subnetSelectorTerms:
   - tags:
@@ -17,6 +19,7 @@ spec:
 
 
   instanceProfile: eks-karpenter-demo-karpenter-node-role 
+
 
 
 
