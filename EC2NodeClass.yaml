@@ -8,8 +8,7 @@ spec:
   - id: ami-0a6793a25df710b06  # AMD64 AMI
   - id: ami-0ff3ffae254f9ede6  # ARM64 AMI
   securityGroupSelectorTerms:
-  - tags:
-      karpenter.sh/discovery: eks-karpenter-demo
+
   - tags:
       aws:eks:cluster-name: eks-karpenter-demo
 
@@ -19,6 +18,7 @@ spec:
 
 
   instanceProfile: eks-karpenter-demo-karpenter-node-role 
+
 
 
 
