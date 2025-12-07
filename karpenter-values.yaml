@@ -1,5 +1,5 @@
-clusterName: eks-karpenter-demo
-clusterEndpoint: "https://02A5631CDEA4261899C4C5FAE80E25B1.gr7.eu-central-1.eks.amazonaws.com"
 settings:
+  clusterName: eks-karpenter-demo
+  clusterEndpoint: "https://ABCDEF1234567.gr7.eu-central-1.eks.amazonaws.com"
   aws:
     disableDryRun: true
