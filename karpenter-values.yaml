@@ -5,3 +5,8 @@ settings:
     disableDryRun: true
     defaultInstanceProfile: "eks-karpenter-demo-karpenter-node-role"
 
+controller:
+  env:
+    - name: AWS_REGION
+      value: "eu-central-1"
+
