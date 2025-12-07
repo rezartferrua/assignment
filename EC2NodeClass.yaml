@@ -10,13 +10,16 @@ spec:
   securityGroupSelectorTerms:
   - tags:
       Name: eks-karpenter-demo
+  - tags:
       Name: eks-karpenter-demo-vpc
   subnetSelectorTerms:
   - tags:
       Name: eks-karpenter-demo
+  - tags
       Name: eks-karpenter-demo-vpc
 
   instanceProfile: eks-karpenter-demo-karpenter-node-role 
+
 
 
 
