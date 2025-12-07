@@ -17,7 +17,7 @@ spec:
           values: ["on-demand", "spot"]
         - key: node.kubernetes.io/instance-type
           operator: In
-          values: ["t3.micro","t4g.micro"]
+          values: ["c7i-flex.large","t4g.small"]
       nodeClassRef:
         group: karpenter.k8s.aws
         kind: EC2NodeClass
@@ -26,4 +26,5 @@ spec:
     consolidationPolicy: WhenEmpty
 
     consolidateAfter: 1m
+
 
