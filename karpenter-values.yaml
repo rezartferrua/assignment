@@ -1,5 +1,7 @@
 settings:
-  clusterName: eks-karpenter-demo
+  clusterName: "eks-karpenter-demo"
   clusterEndpoint: "https://ABCDEF1234567.gr7.eu-central-1.eks.amazonaws.com"
   aws:
     disableDryRun: true
+    defaultInstanceProfile: "eks-karpenter-demo-karpenter-node-role"
+
