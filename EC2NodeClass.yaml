@@ -10,10 +10,13 @@ spec:
   securityGroupSelectorTerms:
   - tags:
       karpenter.sh/discovery: eks-karpenter-demo
+      karpenter.sh/discovery: eks-karpenter-demo-vpc
   subnetSelectorTerms:
   - tags:
       karpenter.sh/discovery: eks-karpenter-demo
+      karpenter.sh/discovery: eks-karpenter-demo-vpc
 
   instanceProfile: eks-karpenter-demo-karpenter-node-role 
+
 
 
