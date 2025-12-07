@@ -10,3 +10,7 @@ controller:
     - name: AWS_REGION
       value: "eu-central-1"
 
+serviceAccount:
+  annotations:
+    eks.amazonaws.com/role-arn: "arn:aws:iam::724605101814:role/eks-karpenter-demo-karpenter-controller"
+
